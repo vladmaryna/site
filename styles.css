@@ -530,3 +530,11 @@ body.dark .add-button:hover{color:#fff!important;background:#4560ff!important;bo
   .hero-actions{width:min(100%,218px)!important}
   .hero .primary-button{min-height:44px!important;padding:11px 20px!important;font-size:14.5px!important}
 }
+
+
+/* Sharper mobile hero phone */
+@media (max-width: 900px){
+  .hero-visual{opacity:1!important}
+  body.dark .hero-visual{opacity:1!important}
+  .hero-iphone-image{opacity:1!important;filter:contrast(1.12) saturate(1.14) drop-shadow(0 24px 26px rgba(18,24,70,.32))!important}
+}
