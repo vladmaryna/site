@@ -619,3 +619,19 @@ body.dark .theme-toggle{color:#f4f5f0!important}
   body.dark .theme-toggle{color:#f4f5f0!important}
   .theme-toggle .theme-icon{width:23px!important;height:23px!important}
 }
+
+
+/* Black action icons and matching product heart */
+body:not(.dark) .icon-button{color:#11130f!important}
+body:not(.dark) .favorite-button svg,body:not(.dark) .cart-button svg{stroke:#11130f!important}
+.theme-toggle .theme-moon{display:block;font-size:30px!important;line-height:1;color:#11130f!important;transform:translateY(-1px)}
+body.dark .theme-toggle .theme-icon{color:#f4f5f0!important;stroke:#f4f5f0!important}
+.favorite{color:#11130f!important;background:#fff!important;border:0!important}
+.favorite svg{width:22px!important;height:22px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.9!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.favorite.active{color:#4560ff!important}
+body.dark .favorite{color:#11130f!important;background:#fff!important}
+body.dark .favorite.active{color:#4560ff!important}
+@media (max-width: 900px){
+  .theme-toggle .theme-moon{font-size:31px!important}
+  .favorite svg{width:23px!important;height:23px!important}
+}

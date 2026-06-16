@@ -56,7 +56,7 @@ const themeIcons = {
 };
 function applyTheme(theme) {
   document.body.classList.toggle("dark", theme === "dark");
-  themeToggle.innerHTML = theme === "dark" ? themeIcons.sun : themeIcons.moon;
+  themeToggle.innerHTML = theme === "dark" ? themeIcons.sun : '<span class="theme-moon" aria-hidden="true">☾</span>';
   themeToggle.setAttribute("aria-label", theme === "dark" ? "Увімкнути світлу тему" : "Увімкнути темну тему");
 }
 const savedTheme = localStorage.getItem("mobphone-theme") || "light";
@@ -113,7 +113,7 @@ function renderProducts() {
   productGrid.innerHTML = visible.map(product => `
     <article class="product-card" data-product-id="${product.id}" tabindex="0" aria-label="Відкрити ${product.name}">
       <span class="badge">${product.label}</span>
-      <button class="favorite ${favoriteIds.includes(product.id) ? "active" : ""}" type="button" data-favorite-id="${product.id}" aria-label="${favoriteIds.includes(product.id) ? "Видалити з обраного" : "Додати в обране"}">${favoriteIds.includes(product.id) ? "♥" : "♡"}</button>
+      <button class="favorite ${favoriteIds.includes(product.id) ? "active" : ""}" type="button" data-favorite-id="${product.id}" aria-label="${favoriteIds.includes(product.id) ? "Видалити з обраного" : "Додати в обране"}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg></button>
       <div class="product-image"><img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.src='images/hero-iphone.png'"></div>
       <div class="product-info">
         <small>Apple</small>
