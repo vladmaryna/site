@@ -713,3 +713,16 @@ body.dark .favorite.active{color:#4560ff!important}
     font-size:13px!important;
   }
 }
+
+
+/* Keep selected mobile category inside frame */
+@media (max-width: 680px){
+  .category-card,
+  .category-card:hover,
+  .category-card.active{
+    transform:none!important;
+  }
+  .category-grid{
+    padding-top:4px!important;
+  }
+}
