@@ -50,9 +50,13 @@ const megaProducts = document.querySelector("#megaProducts");
 const catalogOverlay = document.querySelector("#catalogOverlay");
 
 const themeToggle = document.querySelector("#themeToggle");
+const themeIcons = {
+  moon: '<svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.2A8.7 8.7 0 0 1 8.8 3.5a7.2 7.2 0 1 0 11.7 11.7Z"/></svg>',
+  sun: '<svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v3M12 18.5v3M4.3 4.3l2.1 2.1M17.6 17.6l2.1 2.1M2.5 12h3M18.5 12h3M4.3 19.7l2.1-2.1M17.6 6.4l2.1-2.1"/></svg>'
+};
 function applyTheme(theme) {
   document.body.classList.toggle("dark", theme === "dark");
-  themeToggle.textContent = theme === "dark" ? "☀" : "☾";
+  themeToggle.innerHTML = theme === "dark" ? themeIcons.sun : themeIcons.moon;
   themeToggle.setAttribute("aria-label", theme === "dark" ? "Увімкнути світлу тему" : "Увімкнути темну тему");
 }
 const savedTheme = localStorage.getItem("mobphone-theme") || "light";

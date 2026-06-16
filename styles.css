@@ -608,3 +608,14 @@ body.dark .theme-toggle{color:#f4f5f0!important}
   .orbit-two{width:266px!important;height:266px!important}
   .shield{width:92px!important;height:112px!important;font-size:32px!important}
 }
+
+
+/* Real SVG theme icons */
+.theme-toggle{font-size:0!important;color:var(--ink)!important}
+.theme-toggle .theme-icon{width:22px!important;height:22px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.9!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+body.dark .theme-toggle{color:#f4f5f0!important}
+@media (max-width: 900px){
+  .theme-toggle{font-size:0!important;color:var(--ink)!important}
+  body.dark .theme-toggle{color:#f4f5f0!important}
+  .theme-toggle .theme-icon{width:23px!important;height:23px!important}
+}
