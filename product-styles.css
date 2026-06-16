@@ -143,3 +143,9 @@ body.light .product-cart svg{stroke:#11130f!important}
   .tabs a{white-space:nowrap!important}
   .tabs .back{min-width:44px!important;justify-content:center!important}
 }
+
+
+/* Product search button */
+.product-search-button{display:grid;place-items:center;border:0;background:transparent;color:inherit;font:inherit;font-size:19px;font-weight:800;cursor:pointer}
+.product-search input{min-width:0;border:0;outline:0;background:transparent;color:inherit;font:inherit;width:100%}
+.product-search{display:flex;align-items:center;gap:12px}
