@@ -391,12 +391,6 @@ if (initialSearch) { searchInput.value = initialSearch; renderProducts(); docume
     const hero = document.querySelector('[data-animate-section="hero"]');
     requestAnimationFrame(() => playSection(hero));
 
-    sections.forEach(section => {
-      section.addEventListener("pointerenter", () => playSection(section));
-      section.addEventListener("click", () => playSection(section));
-      section.addEventListener("touchstart", () => playSection(section), { passive: true });
-      section.addEventListener("focusin", () => playSection(section));
-    });
 
     if (!("IntersectionObserver" in window)) {
       sections.forEach(section => playSection(section));
