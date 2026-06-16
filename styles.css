@@ -577,3 +577,8 @@ body.dark .theme-toggle{color:#f4f5f0!important}
   .theme-toggle{color:var(--ink)!important;font-size:20px!important}
   body.dark .theme-toggle{color:#f4f5f0!important}
 }
+
+
+/* Header scrolls with page */
+.header{position:relative!important;top:auto!important}
+@media (max-width: 900px){.header{position:relative!important;top:auto!important}}
