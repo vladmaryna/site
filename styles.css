@@ -582,3 +582,29 @@ body.dark .theme-toggle{color:#f4f5f0!important}
 /* Header scrolls with page */
 .header{position:relative!important;top:auto!important}
 @media (max-width: 900px){.header{position:relative!important;top:auto!important}}
+
+
+/* Mobile Care block matches desktop composition */
+@media (max-width: 900px){
+  .promo{display:grid!important;grid-template-columns:1.05fr .95fr!important;align-items:center!important;min-height:300px!important;margin-top:72px!important;border-radius:18px!important}
+  .promo-copy{padding:34px 0 34px 24px!important}
+  .promo .eyebrow{font-size:9px!important;margin-bottom:12px!important}
+  .promo h2{max-width:230px!important;font-size:clamp(31px,8.2vw,42px)!important;line-height:1.06!important}
+  .promo p{max-width:260px!important;margin:18px 0 16px!important;font-size:12.5px!important;line-height:1.55!important}
+  .promo p.typing-line{min-height:3.8em!important}
+  .promo a{font-size:14px!important;margin-top:4px!important}
+  .promo-orbit{position:relative!important;inset:auto!important;height:100%!important;min-height:300px!important;opacity:1!important;overflow:visible!important}
+  .orbit-one{width:200px!important;height:200px!important}
+  .orbit-two{width:300px!important;height:300px!important}
+  .shield{width:104px!important;height:126px!important;border-radius:42px 42px 58px 58px!important;font-size:36px!important}
+}
+@media (max-width: 420px){
+  .promo{grid-template-columns:1.06fr .94fr!important;min-height:285px!important;border-radius:16px!important}
+  .promo-copy{padding:30px 0 30px 20px!important}
+  .promo h2{max-width:215px!important;font-size:31px!important}
+  .promo p{max-width:230px!important;font-size:12px!important}
+  .promo-orbit{min-height:285px!important}
+  .orbit-one{width:178px!important;height:178px!important}
+  .orbit-two{width:266px!important;height:266px!important}
+  .shield{width:92px!important;height:112px!important;font-size:32px!important}
+}
