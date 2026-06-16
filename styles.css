@@ -427,3 +427,34 @@ body.dark .mega-product img{mix-blend-mode:screen}
   .promo{min-height:520px}
   .promo h2{font-size:38px}
 }
+
+
+/* Hard mobile override for iPhone Safari */
+@media (max-width: 900px){
+  html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+  .announcement{display:none!important}
+  .header{position:sticky!important;top:0!important;display:grid!important;width:100%!important;max-width:100vw!important;grid-template-columns:minmax(0,1fr) auto!important;gap:10px!important;padding:12px!important;overflow:hidden!important;background:rgba(244,245,240,.96)!important}
+  .logo{grid-column:1!important;grid-row:1!important;justify-self:start!important;align-items:flex-start!important;width:132px!important;min-width:0!important;max-width:132px!important}
+  .logo-word{font-size:28px!important;letter-spacing:-.075em!important}
+  .logo-word::after{height:38px!important;top:-7px!important}
+  .logo small{font-size:4px!important;letter-spacing:.08em!important}
+  .header-actions{grid-column:2!important;grid-row:1!important;display:flex!important;gap:6px!important;margin:0!important;justify-self:end!important;max-width:140px!important}
+  .icon-button{width:39px!important;height:39px!important;min-width:39px!important}
+  .icon-button svg{width:18px!important}
+  .theme-toggle{display:grid!important;font-size:17px!important}
+  .favorite-button span,.cart-button span{width:18px!important;height:18px!important;top:-5px!important;right:-5px!important;font-size:10px!important}
+  .catalog-button{grid-column:1/-1!important;grid-row:2!important;display:inline-flex!important;width:100%!important;height:46px!important;padding:0 18px!important;border-radius:18px!important;font-size:17px!important}
+  .header .search{grid-column:1/-1!important;grid-row:3!important;width:100%!important;min-width:0!important;padding:12px 15px!important;border-radius:18px!important}
+  .search input{min-width:0!important;font-size:15px!important}
+  .section-shell,.hero{width:calc(100% - 18px)!important;max-width:calc(100% - 18px)!important}
+  .hero{min-height:540px!important;margin-top:14px!important;border-radius:24px!important;overflow:hidden!important}
+  .hero-copy{padding:28px 18px 18px!important}
+  .hero h1{max-width:285px!important;font-size:39px!important;line-height:1.08!important;letter-spacing:-.035em!important}
+  .hero p{max-width:270px!important;margin:20px 0 24px!important;font-size:13.5px!important;line-height:1.58!important}
+  .hero p.typing-line{min-height:4.4em!important}
+  .hero-actions{display:grid!important;width:min(100%,280px)!important;grid-template-columns:1fr!important;gap:14px!important}
+  .primary-button{width:100%!important;min-height:52px!important;font-size:17px!important}
+  .hero-visual{position:absolute!important;inset:auto -44px -8px 31%!important;height:292px!important;opacity:.4!important;pointer-events:none!important}
+  .glow{width:300px!important;height:300px!important;top:54%!important;left:48%!important}
+  .hero-iphone-image{width:118%!important;height:104%!important;top:54%!important;left:46%!important}
+}
