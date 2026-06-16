@@ -458,3 +458,42 @@ body.dark .mega-product img{mix-blend-mode:screen}
   .glow{width:300px!important;height:300px!important;top:54%!important;left:48%!important}
   .hero-iphone-image{width:118%!important;height:104%!important;top:54%!important;left:46%!important}
 }
+
+
+/* Mobile header/search and theme correction */
+@media (max-width: 900px){
+  .header{grid-template-columns:minmax(0,1fr) auto!important;gap:10px 8px!important;overflow:hidden!important}
+  .logo{grid-column:1!important;grid-row:1!important;width:132px!important;max-width:132px!important}
+  .header-actions{grid-column:2!important;grid-row:1!important;max-width:138px!important;gap:6px!important}
+  .catalog-button{grid-column:1!important;grid-row:2!important;width:auto!important;min-width:126px!important;height:48px!important;padding:0 14px!important;border-radius:18px!important;font-size:16px!important;white-space:nowrap!important}
+  .header .search{grid-column:2!important;grid-row:2!important;width:100%!important;min-width:0!important;height:48px!important;padding:0 13px!important;border-radius:18px!important;gap:8px!important}
+  .search svg{width:19px!important;min-width:19px!important}
+  .search input{font-size:14px!important;text-overflow:ellipsis!important}
+  .hero{background:#e8eae2!important;color:#11130f!important}
+  .hero p{color:#6e7269!important}
+  .text-link{color:#11130f!important}
+  .hero-visual{opacity:.34!important}
+  .glow{opacity:.68!important}
+  body.dark .header{border-color:#29292c!important;background:rgba(12,12,13,.96)!important}
+  body.dark .catalog-button{color:#fff!important;background:#11130f!important;border:1px solid #3b3b3e!important}
+  body.dark .search,body.dark .icon-button{color:#f4f5f0!important;border-color:#303033!important;background:#181819!important}
+  body.dark .search input{color:#f4f5f0!important}
+  body.dark .search input::placeholder{color:#888!important}
+  body.dark .hero{background:#18191b!important;color:#f4f5f0!important}
+  body.dark .hero h1{color:#f4f5f0!important}
+  body.dark .hero h1 em{color:var(--lime)!important}
+  body.dark .hero p{color:#a8aba3!important}
+  body.dark .text-link{color:#f4f5f0!important}
+  body.dark .hero-visual{opacity:.42!important}
+}
+@media (max-width: 420px){
+  .header{padding:10px!important;grid-template-columns:minmax(0,1fr) auto!important}
+  .logo{width:120px!important;max-width:120px!important}
+  .logo-word{font-size:25px!important}
+  .logo small{font-size:3.8px!important}
+  .icon-button{width:38px!important;height:38px!important;min-width:38px!important}
+  .header-actions{max-width:132px!important;gap:5px!important}
+  .catalog-button{min-width:118px!important;height:46px!important;font-size:15px!important;padding:0 12px!important}
+  .header .search{height:46px!important;padding:0 11px!important}
+  .search input{font-size:13.5px!important}
+}
