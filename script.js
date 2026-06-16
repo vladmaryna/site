@@ -197,6 +197,7 @@ categoryGrid.addEventListener("click", event => {
   if (!button) return;
   document.querySelectorAll("[data-category]").forEach(item => item.classList.remove("active"));
   button.classList.add("active");
+  button.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   activeCategory = button.dataset.category;
   renderProducts();
   document.querySelector("#products").scrollIntoView({ behavior: "smooth" });

@@ -647,3 +647,29 @@ body.dark .favorite.active{color:#4560ff!important}
 /* Filled favorite state */
 .favorite.active svg{fill:#4560ff!important;stroke:#4560ff!important}
 .favorite.active{color:#4560ff!important}
+
+
+/* Mobile category no clipping */
+@media (max-width: 680px){
+  .category-grid{
+    display:grid!important;
+    grid-auto-flow:column!important;
+    grid-auto-columns:calc((100vw - 58px)/2)!important;
+    grid-template-columns:none!important;
+    gap:14px!important;
+    width:100vw!important;
+    max-width:100vw!important;
+    margin-inline:calc(50% - 50vw)!important;
+    padding:0 22px 12px!important;
+    overflow-x:auto!important;
+    scroll-padding-inline:22px!important;
+    scroll-snap-type:x proximity!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .category-card{
+    width:auto!important;
+    min-width:0!important;
+    flex:0 0 auto!important;
+    scroll-snap-align:center!important;
+  }
+}
