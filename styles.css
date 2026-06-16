@@ -635,3 +635,10 @@ body.dark .favorite.active{color:#4560ff!important}
   .theme-toggle .theme-moon{font-size:31px!important}
   .favorite svg{width:23px!important;height:23px!important}
 }
+
+
+/* Mobile category centering */
+@media (max-width: 680px){
+  .category-grid{scroll-padding-inline:22px!important;padding-right:22px!important}
+  .category-card{flex:0 0 158px!important;min-width:158px!important}
+}
