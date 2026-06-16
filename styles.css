@@ -642,3 +642,8 @@ body.dark .favorite.active{color:#4560ff!important}
   .category-grid{scroll-padding-inline:22px!important;padding-right:22px!important}
   .category-card{flex:0 0 158px!important;min-width:158px!important}
 }
+
+
+/* Filled favorite state */
+.favorite.active svg{fill:#4560ff!important;stroke:#4560ff!important}
+.favorite.active{color:#4560ff!important}
