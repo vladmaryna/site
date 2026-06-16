@@ -503,3 +503,19 @@ body.dark .mega-product img{mix-blend-mode:screen}
 .add-button{display:grid;place-items:center;line-height:1;color:#fff;background:#11130f}
 body.dark .add-button{color:#11130f!important;background:#f4f5f0!important;border:1px solid #303033!important}
 body.dark .add-button:hover{color:#fff!important;background:#4560ff!important;border-color:#4560ff!important}
+
+
+/* Mobile catalog icon and hero image clarity */
+@media (max-width: 900px){
+  .catalog-button{width:56px!important;min-width:56px!important;max-width:56px!important;padding:0!important;gap:0!important;font-size:0!important;border-radius:18px!important}
+  .catalog-button .menu-icon{gap:4px!important}
+  .catalog-button .menu-icon i{width:24px!important;height:3px!important}
+  .header .search{grid-column:2!important;grid-row:2!important}
+  .hero-visual{opacity:.82!important}
+  body.dark .hero-visual{opacity:.9!important}
+  .hero-iphone-image{opacity:1!important;filter:drop-shadow(0 24px 26px rgba(18,24,70,.28))!important}
+}
+@media (max-width: 420px){
+  .catalog-button{width:52px!important;min-width:52px!important;max-width:52px!important;height:46px!important}
+  .catalog-button .menu-icon i{width:22px!important;height:3px!important}
+}
