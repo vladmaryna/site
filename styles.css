@@ -369,3 +369,61 @@ body.dark .mega-product img{mix-blend-mode:screen}
 @keyframes orbitBurstTwo{0%{transform:translate(-50%,-50%) scale(.78);opacity:.18}100%{transform:translate(-50%,-50%) scale(1);opacity:.55}}
 @media (max-width: 680px){.hero{min-height:620px;align-items:start}.hero-copy{padding:34px 22px 28px}.hero h1{max-width:330px;font-size:clamp(42px,13vw,56px);line-height:1.03;letter-spacing:-.04em;overflow-wrap:break-word}.hero p{max-width:310px;margin:20px 0 26px;font-size:15px;line-height:1.55}.hero p.typing-line{min-height:4.7em}.primary-button{padding:15px 20px}.hero-actions{gap:16px}.glow{width:360px;height:360px;top:62%;left:57%;filter:blur(4px)}.hero-visual{inset:36% -28% -12% 4%;opacity:.26}.hero-iphone-image{width:96%;height:76%;top:54%;left:56%}.floating-card{display:none}.promo{min-height:590px;border-radius:26px}.promo-copy{padding:38px 24px}.promo h2{max-width:330px;font-size:clamp(38px,12vw,54px);line-height:1.02;letter-spacing:-.04em}.promo p{max-width:330px;font-size:15px;line-height:1.55}.promo p.typing-line{min-height:4.7em}.promo-orbit{inset:42% -22% -12%;opacity:.62}.orbit-one{width:220px;height:220px}.orbit-two{width:340px;height:340px}.shield{width:126px;height:150px;border-radius:52px 52px 66px 66px;font-size:43px}}
 @media (max-width: 420px){.section-shell,.hero{width:calc(100% - 18px)}.hero{min-height:600px}.hero-copy{padding-inline:18px}.hero h1{font-size:43px}.hero p{font-size:14px}.promo{min-height:570px}.promo-copy{padding-inline:20px}.promo h2{font-size:40px}.promo-orbit{inset:46% -34% -14%}.shield{width:112px;height:136px;font-size:38px}}
+
+
+/* Mobile polish after GitHub Pages check */
+@media (max-width: 680px){
+  body{overflow-x:hidden}
+  .announcement{display:none}
+  .header{position:sticky;top:0;grid-template-columns:minmax(0,1fr) auto;gap:10px 12px;padding:12px;background:rgba(244,245,240,.94)}
+  .logo{grid-column:1;grid-row:1;align-items:flex-start;min-width:0;width:132px}
+  .logo-word{font-size:28px;letter-spacing:-.075em}
+  .logo-word::after{height:38px;top:-7px;left:42%}
+  .logo small{margin-top:8px;font-size:4.1px;letter-spacing:.09em}
+  .header-actions{grid-column:2;grid-row:1;display:flex;gap:7px;margin-left:0;justify-self:end}
+  .icon-button{width:43px;height:43px;min-width:43px}
+  .header-actions .theme-toggle{display:grid!important}
+  .favorite-button span,.cart-button span{top:-5px;right:-5px}
+  .catalog-button{grid-column:1/-1;grid-row:2;width:100%;height:48px;padding:0 18px;border-radius:18px;font-size:17px}
+  .catalog-button .menu-icon i{width:18px;height:2px}
+  .header .search{grid-column:1/-1;grid-row:3;padding:12px 15px;border-radius:18px}
+  .search input{min-width:0;font-size:15px}
+  .section-shell,.hero{width:calc(100% - 18px)}
+  .hero{min-height:560px;margin-top:14px;border-radius:24px;align-items:start;background:#18191b}
+  .hero-copy{padding:32px 20px 20px}
+  .eyebrow{margin-bottom:16px;font-size:10px;letter-spacing:.18em}
+  .hero h1{max-width:300px;font-size:clamp(38px,11.3vw,46px);line-height:1.08;letter-spacing:-.035em}
+  .hero h1 em{display:inline;color:var(--lime)}
+  .hero p{max-width:280px;margin:20px 0 24px;font-size:14px;line-height:1.58}
+  .hero p.typing-line{min-height:4.4em}
+  .hero-actions{display:grid;width:min(100%,280px);grid-template-columns:1fr;gap:14px;align-items:start}
+  .primary-button{width:100%;min-height:54px;padding:15px 20px;font-size:18px}
+  .text-link{font-size:16px}
+  .hero-visual{position:absolute;inset:auto -36px -10px 34%;height:310px;opacity:.42;pointer-events:none}
+  .glow{width:300px;height:300px;top:54%;left:48%;opacity:.7;filter:blur(4px)}
+  .hero-iphone-image{width:118%;height:104%;top:54%;left:46%;object-fit:contain;filter:drop-shadow(0 24px 26px rgba(18,24,70,.28))}
+  .floating-card{display:none}
+  .categories,.products,.benefits{padding-top:62px}
+  .promo{min-height:540px;margin-top:70px;border-radius:24px}
+  .promo-copy{padding:36px 22px}
+  .promo h2{max-width:300px;font-size:clamp(36px,11vw,46px);line-height:1.05;letter-spacing:-.035em}
+  .promo p{max-width:295px;font-size:14px;line-height:1.58}
+  .promo p.typing-line{min-height:4.4em}
+  .promo-orbit{inset:44% -28% -10%;opacity:.58}
+}
+@media (max-width: 420px){
+  .header{padding:10px 10px;gap:9px}
+  .logo{width:124px}
+  .logo-word{font-size:26px}
+  .icon-button{width:40px;height:40px;min-width:40px}
+  .header-actions{gap:6px}
+  .catalog-button{height:46px;font-size:16px}
+  .hero{min-height:540px}
+  .hero-copy{padding:28px 18px 18px}
+  .hero h1{max-width:285px;font-size:39px}
+  .hero p{max-width:270px;font-size:13.5px}
+  .primary-button{min-height:52px;font-size:17px}
+  .hero-visual{inset:auto -44px -8px 31%;height:292px;opacity:.4}
+  .promo{min-height:520px}
+  .promo h2{font-size:38px}
+}
