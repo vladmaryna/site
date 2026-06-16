@@ -538,3 +538,21 @@ body.dark .add-button:hover{color:#fff!important;background:#4560ff!important;bo
   body.dark .hero-visual{opacity:1!important}
   .hero-iphone-image{opacity:1!important;filter:contrast(1.12) saturate(1.14) drop-shadow(0 24px 26px rgba(18,24,70,.32))!important}
 }
+
+
+/* Wider mobile search and sun theme icon */
+@media (max-width: 900px){
+  .header{grid-template-columns:56px minmax(0,1fr)!important;column-gap:12px!important}
+  .logo{grid-column:1/-1!important;grid-row:1!important;width:132px!important;max-width:132px!important}
+  .header-actions{grid-column:2!important;grid-row:1!important;justify-self:end!important;align-self:start!important;max-width:none!important}
+  .theme-toggle{color:#ffbf24!important;font-size:20px!important}
+  body.dark .theme-toggle{color:#ffbf24!important}
+  .catalog-button{grid-column:1!important;grid-row:2!important;width:56px!important;min-width:56px!important;max-width:56px!important}
+  .header .search{grid-column:2!important;grid-row:2!important;width:100%!important;max-width:none!important;justify-self:stretch!important}
+  .search input{font-size:16px!important}
+}
+@media (max-width: 420px){
+  .header{grid-template-columns:52px minmax(0,1fr)!important;column-gap:10px!important}
+  .catalog-button{width:52px!important;min-width:52px!important;max-width:52px!important}
+  .search input{font-size:15px!important}
+}

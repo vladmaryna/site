@@ -52,7 +52,7 @@ const catalogOverlay = document.querySelector("#catalogOverlay");
 const themeToggle = document.querySelector("#themeToggle");
 function applyTheme(theme) {
   document.body.classList.toggle("dark", theme === "dark");
-  themeToggle.textContent = theme === "dark" ? "☀" : "☾";
+  themeToggle.textContent = "☀";
   themeToggle.setAttribute("aria-label", theme === "dark" ? "Увімкнути світлу тему" : "Увімкнути темну тему");
 }
 const savedTheme = localStorage.getItem("mobphone-theme") || "light";
