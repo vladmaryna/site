@@ -497,3 +497,9 @@ body.dark .mega-product img{mix-blend-mode:screen}
   .header .search{height:46px!important;padding:0 11px!important}
   .search input{font-size:13.5px!important}
 }
+
+
+/* Add button contrast fix */
+.add-button{display:grid;place-items:center;line-height:1;color:#fff;background:#11130f}
+body.dark .add-button{color:#11130f!important;background:#f4f5f0!important;border:1px solid #303033!important}
+body.dark .add-button:hover{color:#fff!important;background:#4560ff!important;border-color:#4560ff!important}
