@@ -568,3 +568,12 @@ body.dark .add-button:hover{color:#fff!important;background:#4560ff!important;bo
   .promo{border-radius:12px!important;min-height:490px!important}
   .promo-copy{padding:32px 20px 24px!important}
 }
+
+
+/* Theme icon parity on mobile and desktop */
+.theme-toggle{color:var(--ink)}
+body.dark .theme-toggle{color:#f4f5f0!important}
+@media (max-width: 900px){
+  .theme-toggle{color:var(--ink)!important;font-size:20px!important}
+  body.dark .theme-toggle{color:#f4f5f0!important}
+}
