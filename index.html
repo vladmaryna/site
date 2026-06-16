@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MobPhone — продаж, обмін, сервіс та аксесуари.">
+  <title>MobPhone — техніка, сервіс та аксесуари</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    Безкоштовна доставка від 15 000 ₴
+    <span>•</span>
+    Розстрочка до 24 місяців
+  </div>
+
+  <header class="header">
+    <a class="logo" href="#" aria-label="MobPhone">
+      <span class="logo-word"><span>Mob</span><strong>Phone</strong></span>
+      <small>Продаж • Обмін • Сервіс • Аксесуари</small>
+    </a>
+
+    <button class="catalog-button" id="catalogButton" type="button">
+      <span class="menu-icon"><i></i><i></i><i></i></span>
+      Каталог
+    </button>
+
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+      <input id="searchInput" type="search" placeholder="Знайти iPhone, MacBook, AirPods...">
+    </label>
+
+    <nav class="header-actions" aria-label="Дії користувача">
+      <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Змінити тему" title="Змінити тему">☾</button>
+      <button class="icon-button favorite-button" id="favoritesButton" type="button" aria-label="Обране">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg>
+        <span id="favoritesCount">0</span>
+      </button>
+      <button class="icon-button cart-button" id="cartButton" type="button" aria-label="Кошик">
+        <svg viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12L6 3H3m5 16h.01M18 19h.01"/></svg>
+        <span id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="mega-catalog" id="megaCatalog" aria-hidden="true">
+    <aside class="mega-sidebar">
+      <span class="mega-label">Каталог Apple</span>
+      <button data-mega-category="all" class="active"><img src="images/categories/all-products.png" alt="Apple"> Усі товари <b>›</b></button>
+      <button data-mega-category="phone"><img src="images/categories/iphone.png" alt="iPhone"> iPhone <b>›</b></button>
+      <button data-mega-category="laptop"><img src="images/categories/macbook.png" alt="MacBook"> MacBook <b>›</b></button>
+      <button data-mega-category="audio"><img src="images/categories/airpods.webp" alt="AirPods"> AirPods <b>›</b></button>
+      <button data-mega-category="watch"><img src="images/categories/apple-watch.png" alt="Apple Watch"> Apple Watch <b>›</b></button>
+      <button data-mega-category="tablet"><img src="images/categories/ipad.png" alt="iPad"> iPad <b>›</b></button>
+      <button data-mega-category="accessory"><img src="images/categories/accessories.webp" alt="Аксесуари Apple"> Аксесуари Apple <b>›</b></button>
+    </aside>
+    <div class="mega-content">
+      <div class="mega-head"><div><span>Тільки Apple</span><h2>Оберіть пристрій</h2></div><button id="closeCatalog" aria-label="Закрити каталог">×</button></div>
+      <div class="mega-products" id="megaProducts"></div>
+    </div>
+  </section>
+  <div class="catalog-overlay" id="catalogOverlay"></div>
+
+  <main>
+    <section class="hero" data-animate-section="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Нове покоління</span>
+        <h1 class="typing-line" data-type-sequence data-type-speed="38"><span data-type-text="Техніка, яка ">Техніка, яка </span><em data-type-text="надихає">надихає</em><span data-type-text=" щодня"> щодня</span></h1>
+        <p class="typing-line" data-type-sequence data-type-speed="22"><span data-type-text="Оригінальні гаджети, чесна гарантія та швидка доставка по Україні.">Оригінальні гаджети, чесна гарантія та швидка доставка по Україні.</span></p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#products">Обрати пристрій</a>
+          <a class="text-link" href="#benefits">Чому ми? <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glow"></div>
+        <img class="hero-iphone-image" src="images/hero-iphone.png" alt="iPhone Pro" onerror="this.src='https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=900&q=90'">
+        <div class="floating-card card-one">Trade-in <strong>до 32 000 ₴</strong></div>
+        <div class="floating-card card-two">Гарантія <strong>12 місяців</strong></div>
+      </div>
+    </section>
+
+    <section class="categories section-shell">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Каталог</span>
+          <h2>Що шукаєте?</h2>
+        </div>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card active" data-category="all"><img src="images/categories/all-products.png" alt="Техніка Apple"><strong>Усі товари</strong><small data-count-category="all">10 позицій</small></button>
+        <button class="category-card" data-category="phone"><img src="images/categories/iphone.png" alt="iPhone"><strong>Смартфони</strong><small data-count-category="phone">2 позиції</small></button>
+        <button class="category-card" data-category="laptop"><img src="images/categories/macbook.png" alt="MacBook"><strong>Ноутбуки</strong><small data-count-category="laptop">2 позиції</small></button>
+        <button class="category-card" data-category="audio"><img src="images/categories/airpods.webp" alt="AirPods"><strong>Навушники</strong><small data-count-category="audio">2 позиції</small></button>
+        <button class="category-card" data-category="watch"><img src="images/categories/apple-watch.png" alt="Apple Watch"><strong>Годинники</strong><small data-count-category="watch">2 позиції</small></button>
+        <button class="category-card" data-category="tablet"><img src="images/categories/ipad.png" alt="iPad"><strong>Планшети</strong><small data-count-category="tablet">1 позиція</small></button>
+        <button class="category-card" data-category="accessory"><img src="images/categories/accessories.webp" alt="Аксесуари Apple"><strong>Аксесуари</strong><small data-count-category="accessory">1 позиція</small></button>
+      </div>
+    </section>
+
+    <section class="products section-shell" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Хіти продажу</span>
+          <h2>Зараз обирають</h2>
+        </div>
+        <button class="outline-button" id="showAllButton" type="button">Дивитися все <span>→</span></button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState">Нічого не знайдено. Спробуйте інший запит.</p>
+    </section>
+
+    <section class="promo section-shell" data-animate-section="promo">
+      <div class="promo-copy">
+        <span class="eyebrow light">MobPhone Care+</span>
+        <h2 class="typing-line" data-type-sequence data-type-speed="34"><span data-type-text="Спокій за вашу техніку">Спокій за вашу техніку</span></h2>
+        <p class="typing-line" data-type-sequence data-type-speed="20"><span data-type-text="Розширений захист від випадкових пошкоджень, швидкий ремонт і підтримка без зайвих питань.">Розширений захист від випадкових пошкоджень, швидкий ремонт і підтримка без зайвих питань.</span></p>
+        <a href="#benefits">Дізнатися більше <span>→</span></a>
+      </div>
+      <div class="promo-orbit">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="shield">M+</div>
+      </div>
+    </section>
+
+    <section class="benefits section-shell" id="benefits">
+      <article><span>01</span><h3>Тільки оригінал</h3><p>Перевірена техніка з офіційною гарантією.</p></article>
+      <article><span>02</span><h3>Швидка доставка</h3><p>Відправляємо замовлення в день оформлення.</p></article>
+      <article><span>03</span><h3>Легкий trade-in</h3><p>Оцінимо старий гаджет і зробимо знижку.</p></article>
+      <article><span>04</span><h3>Оплата частинами</h3><p>Зручні платежі без прихованих умов.</p></article>
+    </section>
+  </main>
+
+  <aside class="cart-drawer favorites-drawer" id="favoritesDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div><span class="eyebrow">Збережені товари</span><h2>Обране</h2></div>
+      <button class="close-button" id="closeFavorites" type="button" aria-label="Закрити">×</button>
+    </div>
+    <div class="cart-items" id="favoritesItems">
+      <p class="cart-empty">В обраному поки порожньо.<br>Натисни сердечко біля товару.</p>
+    </div>
+  </aside>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div>
+        <span class="eyebrow">Ваше замовлення</span>
+        <h2>Кошик</h2>
+      </div>
+      <button class="close-button" id="closeCart" type="button" aria-label="Закрити">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Кошик поки порожній.<br>Саме час це виправити.</p>
+    </div>
+    <div class="cart-footer">
+      <div><span>Разом</span><strong id="cartTotal">0 ₴</strong></div>
+      <button class="primary-button" type="button">Оформити замовлення</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="footer-logo" href="#"><span>Mob</span><strong>Phone</strong></a>
+      <p>Техніка та аксесуари Apple. Продаж, обмін, сервіс і чесна гарантія.</p>
+      <div class="footer-socials"><a href="https://instagram.com/mobiphone_store" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="footer-column"><h3>Продукція</h3><a href="#products" data-footer-category="phone">iPhone</a><a href="#products" data-footer-category="laptop">MacBook</a><a href="#products" data-footer-category="watch">Apple Watch</a><a href="#products" data-footer-category="audio">AirPods</a><a href="#products" data-footer-category="accessory">Аксесуари</a></div>
+    <div class="footer-column"><h3>Послуги</h3><a href="#benefits">Trade-in</a><a href="#benefits">Ремонт</a><a href="#benefits">Оплата частинами</a><a href="#benefits">Доставка</a><a href="#benefits">Гарантія</a></div>
+    <div class="footer-column"><h3>Магазини у Львові</h3><p>ТРЦ «Вікторія Гарденс»</p><p>ТРЦ «ВАМ», Виговського, 100</p><p>Провулок 6-й Скнилівський, 8</p></div>
+    <div class="footer-contact"><span>Для зв’язку</span><a class="instagram-button" href="https://instagram.com/mobiphone_store" target="_blank" rel="noopener">Написати в Instagram →</a></div>
+    <div class="footer-bottom"><span>© 2026 MobPhone</span><span>Політика конфіденційності</span><span>Договір публічної оферти</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
